@@ -1,3 +1,40 @@
+@media screen and (max-width:575px) {
+  .font_size
+  {
+    font-size: 25px !important;
+  }
+}
+@media screen and (min-width:575px) and (max-width:767px) {
+  .font_size
+  {
+    font-size: 30px !important;
+  }
+}
+@media screen and (min-width:768px) and (max-width:991px) {
+  .font_size
+  {
+    font-size: 35px !important;
+  }
+}
+@media screen and (min-width:992px) and (max-width:1199px) {
+  .font_size
+  {
+    font-size: 40px !important;
+  }
+}
+@media screen and (min-width:1200px) and (max-width:1399px) {
+  .font_size
+  {
+    font-size: 45px !important;
+  }
+}
+@media screen and (min-width:1400px) {
+  .font_size
+  {
+    font-size: 50px !important;
+  }
+}
+/* --------------------------------------------- */
 .location_hover
 {
   text-decoration: none;
@@ -13,7 +50,7 @@
   background-color: #282c34;
   color: #FF9816;
 }
-
+/* --------------------------------------------- */
 .App {
   text-align: center;
 }

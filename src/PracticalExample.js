@@ -24,6 +24,7 @@ const PracticalExample = () => {
     return (
         <>
             <div className="text-bg-dark p-md-5 p-sm-4 p-1">
+                <div className='text-center pb-mb-5 pb-sm-4 pb-1 fw-bolder font_size location_hover'>API - Card</div>
                 <div className="container">
                     <div className="row d-flex justify-content-xxl-start justify-content-xl-between align-items-center text-break">
                         {
