@@ -1,3 +1,19 @@
+.location_hover
+{
+  text-decoration: none;
+  color: white;
+}
+.location_hover:hover
+{
+  transition: .3s;
+  color: #FF9816;
+}
+::selection
+{
+  background-color: #282c34;
+  color: #FF9816;
+}
+
 .App {
   text-align: center;
 }
