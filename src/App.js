@@ -4,7 +4,6 @@ import RickAndMorty from './RickAndMorty';
 import PracticalExample from './PracticalExample';
 import PreLoader from './PreLoader';
 import { useEffect, useState } from 'react';
-import CardWithPreLoader from './CardWithPreLoader';
 
 function App() {
 
@@ -24,7 +23,7 @@ function App() {
               loader ? <PreLoader/> : <PracticalExample/>
           } */}
 
-      <CardWithPreLoader/>
+      <PracticalExample/>
     </>
   );
 }
