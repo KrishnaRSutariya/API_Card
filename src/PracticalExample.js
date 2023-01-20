@@ -9,6 +9,17 @@ const PracticalExample = () => {
     const [data, setdata] = useState([]);
 
     useEffect(() => {
+
+        // Methods - 1
+                // fetch('url')
+                // .then(()=>{
+
+                // })
+                // .catch(()=>{
+
+                // })
+
+        // Methods - 2
         axios.get('https://rickandmortyapi.com/api/character')
             .then(function (response) {
                 // handle success

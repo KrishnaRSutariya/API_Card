@@ -1,3 +1,16 @@
+#preloading
+{
+  width: 100%;
+  height: 100vh;
+  background-color: #FF9816;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media screen and (max-width:575px) {
   .font_size
   {
