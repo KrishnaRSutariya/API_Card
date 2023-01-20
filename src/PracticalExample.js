@@ -1,8 +1,10 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from "axios";
-import { useEffect, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 import logo from './favicon.ico';
 import { WiMoonAltNew } from "react-icons/wi";
+import CardWithPreLoader, { userData1 } from './CardWithPreLoader';
+
 
 const PracticalExample = () => {
 
@@ -11,13 +13,13 @@ const PracticalExample = () => {
     useEffect(() => {
 
         // Methods - 1
-                // fetch('url')
-                // .then(()=>{
+        // fetch('url')
+        // .then(()=>{
 
-                // })
-                // .catch(()=>{
+        // })
+        // .catch(()=>{
 
-                // })
+        // })
 
         // Methods - 2
         axios.get('https://rickandmortyapi.com/api/character')
@@ -45,7 +47,7 @@ const PracticalExample = () => {
                                         <div className="col-xxl-4 col-lg-6 col-md-12" key={item.id}>
                                             <div className="d-flex m-2 rounded-3 overflow-hidden flex-wrap" style={{ backgroundColor: '#3C3E44' }}>
                                                 <div className="col-sm-4 col-12">
-                                                    <img src={item.image} alt="" className='' style={{width:'100%',height:'100%'}}/>
+                                                    <img src={item.image} alt="" className='' style={{ width: '100%', height: '100%' }} />
                                                 </div>
                                                 <div className="col-sm-8 col-12 px-3">
                                                     <div className="top py-2">
@@ -54,7 +56,7 @@ const PracticalExample = () => {
                                                         </a>
                                                         <div className="fw-bold">
                                                             {
-                                                                (item.status=='Alive') ? <WiMoonAltNew className='pe-1 text-success'/> : (item.status=='Dead') ? <WiMoonAltNew className='pe-1 text-danger'/> : <WiMoonAltNew className='pe-1 text-secondary'/> 
+                                                                (item.status == 'Alive') ? <WiMoonAltNew className='pe-1 text-success' /> : (item.status == 'Dead') ? <WiMoonAltNew className='pe-1 text-danger' /> : <WiMoonAltNew className='pe-1 text-secondary' />
                                                             }
                                                             {item.status} - {item.gender} - {item.species}</div>
                                                     </div>
