@@ -4,7 +4,6 @@ import RickAndMorty from './RickAndMorty';
 import PracticalExample from './PracticalExample';
 import PreLoader from './PreLoader';
 import { useEffect, useState } from 'react';
-import './Script.js';
 
 function App() {
 

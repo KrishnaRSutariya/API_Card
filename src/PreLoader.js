@@ -1,5 +1,4 @@
 import { HashLoader } from "react-spinners";
-import './Script.js';
 
 const PreLoader = () => {
     return (
